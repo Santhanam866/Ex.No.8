@@ -1,72 +1,228 @@
-**Experiment 8: Reproducing an Image Using Prompts for Image Generation**
+# EXP.NO.8 – REPRODUCING AN IMAGE USING PROMPTS FOR IMAGE GENERATION
 
-**Date:** September 3, 2026
+**Date:** SANTHANAM S
 
-**Reg. No:** 212224040293
+**Register Number:** 212224040293
 
----
+## AIM
 
-**Aim**
-To demonstrate text-to-image prompt engineering techniques to reproduce target images by breaking down subject elements, lighting, composition, colors, and camera parameters into structured text prompts.
-
----
-
-**Image Selection & Reproduction Case Studies**
-
-### Image 1: Golden Hour Alpine Sunset
-<img width="2048" height="1365" alt="image" src="https://github.com/user-attachments/assets/5a8f2b70-b687-4d41-a727-69c67ad6ffa4" />
+To demonstrate how text-to-image generation tools can reproduce an existing image by analyzing its visual features and creating precise, descriptive prompts. The experiment focuses on prompt refinement and comparison of the generated image with the original.
 
 ---
 
-**Prompt Refinement Progression**
+## PROCEDURE
 
-* **Iteration 1 (Basic Prompt):**
-`A sunset over a lake with mountains in the background.`
-* **Iteration 2 (Detailed Prompt):**
-`A calm mountain fjord during sunset with warm golden sunlight reflecting across the water and dark silhouette mountains on either side.`
-* **Iteration 3 (Final Fine-Tuned Prompt):**
-`Wide-angle landscape photograph of a serene alpine lake at sunset. Low key golden sun burst setting directly above distant hills, casting a sharp warm light beam reflection across rippling dark blue water. Dark mountain ridges framing the left and right sides. Rough rocky ground in the foreground. Photorealistic, 35mm f/8 lens, cinematic lighting, ultra-detailed texture.`
+1. **Analyze the Original Image**
 
-**Comparison & Analysis**
+   * Identify the main objects or subjects.
+   * Observe colors, textures and shapes.
+   * Study the lighting and shadows.
+   * Examine the background and composition.
+   * Identify the artistic or visual style.
 
-| Feature | Target Image | Generated Output | Alignment Score |
-| --- | --- | --- | --- |
-| **Composition** | Wide perspective, central sun burst, rocky shore foreground | Matches low-angle shoreline view and central sun flare | High (95%) |
-| **Color Palette** | Deep blues, rich gold, muted copper highlights | Captures warm-to-cool gradient across sky and water | High (92%) |
-| **Lighting** | Backlit direct sunlight, strong water specular reflections | Recreates directional lens flare and realistic water glint | Very High (98%) |
+2. **Create a Basic Prompt**
 
----
+   * Describe the main subject and environment using simple words.
 
-### Image 2: Cyberpunk Alleyway at Night
-<img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/688b0aff-9680-4a76-9dc0-570b82422c72" />
+3. **Refine the Prompt**
 
----
+   * Add details about color, lighting, position, background, mood, texture and perspective.
 
-**Prompt Refinement Progression**
+4. **Specify the Style**
 
-* **Iteration 1 (Basic Prompt):**
-`A futuristic street at night with neon signs.`
-* **Iteration 2 (Detailed Prompt):**
-`A wet cyberpunk city alleyway at night illuminated by glowing blue and yellow neon shop signs with dark atmospheric buildings.`
-* **Iteration 3 (Final Fine-Tuned Prompt):**
-`Eye-level shot of a narrow futuristic cyberpunk backstreet alley at night. Wet cobblestone pavement reflecting vivid blue and warm yellow neon store signs. Distressed metallic architectural details, conduit pipes, and glowing neon bar signs in the background. Moody atmospheric mist, Unreal Engine 5 render, cinematic volumetric lighting, 8k resolution, crisp detail.`
+   * Mention whether the image should be realistic, cinematic, artistic, cartoon-style, CGI, etc.
 
-**Comparison & Analysis**
+5. **Generate the Image**
 
-| Feature | Target Image | Generated Output | Alignment Score |
-| --- | --- | --- | --- |
-| **Lighting** | Dual-tone contrast (cool blue neon vs. warm yellow canopy) | Accurately places contrasting light sources across metal structures | High (90%) |
-| **Texture & Style** | Weathered metal walls, damp stone floor reflection | Recreates wet surface sheen and worn industrial panels | High (94%) |
-| **Perspective** | Straight eye-level corridor perspective | Maintains symmetry and centered vanishing point down the street | Very High (96%) |
+   * Enter the refined prompt into an AI image-generation tool.
+
+6. **Compare the Results**
+
+   * Compare the generated image with the original based on subject, colors, composition, lighting and style.
+
+7. **Improve the Prompt**
+
+   * Modify the prompt according to the differences and generate the image again.
 
 ---
 
-**Deliverables & Key Findings**
+## TOOLS USED
 
-* **Prompt Specificity Matters:** Basic prompts generate generic layouts; adding camera parameters (`35mm lens`, `eye-level shot`), lighting terms (`volumetric lighting`, `specular reflection`), and exact color descriptors drives output fidelity.
-* **Iterative Adjustment:** Refining terms like `wet pavement` and `low key golden sun burst` bridged the gap between rough approximations and near-exact visual matches.
+* Stable Diffusion
+* Midjourney
 
 ---
 
-**Conclusion**
-By analyzing key visual attributes—composition, color scheme, lighting direction, and surface textures—text-to-image models can reliably replicate real and stylized reference images. Prompt engineering functions as a precise translation tool between visual design intent and synthetic render output.
+# EXAMPLE 1 – MINIMALIST JAPANESE TEA ROOM
+
+## Analysis of the Target Image
+
+The target image represents a peaceful and minimalist Japanese tea room. The room contains natural wooden elements, a shoji screen, a tatami floor and a small bonsai tree. Soft daylight enters through the screen, creating a calm and balanced atmosphere.
+
+### Key Features
+
+* **Objects:** Bonsai tree, ceramic tea set, tatami floor and shoji screen.
+* **Colors:** Light brown, cream, white and subtle green.
+* **Lighting:** Soft and diffused natural daylight.
+* **Textures:** Woven tatami, smooth wood, textured paper and ceramic.
+* **Composition:** Symmetrical and spacious interior with a low camera angle.
+* **Style:** Minimalist Japanese interior and photorealistic CGI.
+
+## Prompts Used – Example 1
+
+### Basic Prompt
+
+```text
+A minimalist Japanese tea room with a bonsai tree.
+```
+
+### Refined Prompt
+
+```text
+A minimalist Japanese tea room with light wooden walls,
+a traditional tatami floor, a small bonsai tree and a
+ceramic tea set, illuminated by soft natural daylight.
+```
+
+### Final Prompt
+
+```text
+Photorealistic minimalist Japanese tea room, traditional
+tatami flooring, light natural pine wood walls, large shoji
+screen allowing soft diffused daylight, one small elegant
+bonsai tree and a simple handmade ceramic tea set, clean
+symmetrical composition, low floor-level perspective,
+wabi-sabi aesthetic, calm peaceful atmosphere, realistic
+textures, high-detail architectural CGI, no unnecessary
+decorations or furniture.
+```
+
+# Output: <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2458dd34-5d84-460c-8228-28d07d81db4e" />
+
+
+## Comparison Report – Example 1
+
+* **Subject:** The main elements such as the tea room, bonsai and tea set were reproduced successfully.
+* **Color:** Natural wood and cream tones were closely matched.
+* **Lighting:** Soft daylight was successfully represented.
+* **Composition:** The minimalist arrangement was maintained.
+* **Difference:** Small variations may occur in the exact placement and shape of objects.
+
+**Overall:** The final prompt produced a result with high visual similarity because specific details about materials, lighting and composition were included.
+
+---
+
+# EXAMPLE 2 – FUTURISTIC CITY AT NIGHT
+
+## Analysis of the Target Image
+
+The second target image represents a futuristic city at night. Tall skyscrapers, glowing advertisements and flying vehicles create a modern science-fiction environment. The scene contains reflective roads and colorful artificial lighting.
+
+### Key Features
+
+* **Objects:** Tall buildings, flying vehicles, roads and digital billboards.
+* **Colors:** Blue, purple, cyan and pink neon lights.
+* **Lighting:** Strong neon lighting with reflections on wet surfaces.
+* **Textures:** Glass buildings, metallic vehicles and wet roads.
+* **Composition:** Wide-angle city view with tall buildings extending into the distance.
+* **Style:** Cinematic, futuristic and photorealistic.
+
+## Prompts Used – Example 2
+
+### Basic Prompt
+
+```text
+A futuristic city at night with tall buildings and neon lights.
+```
+
+### Refined Prompt
+
+```text
+A futuristic city at night with tall glass skyscrapers,
+bright neon signs, flying vehicles and wet roads reflecting
+blue and purple lights.
+```
+
+### Final Prompt
+
+```text
+Cinematic photorealistic futuristic city at night, enormous
+glass skyscrapers covered with glowing holographic billboards,
+flying vehicles moving between buildings, wet reflective
+streets, blue, cyan, purple and pink neon lighting, light
+mist in the atmosphere, detailed metallic surfaces, wide-angle
+perspective, deep urban background, dramatic reflections,
+high-detail science-fiction environment, realistic lighting
+and depth.
+```
+
+# Output: <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4a6bda07-e280-47d5-b4bd-bfff4e8e81b5" />
+
+## Comparison Report – Example 2
+
+* **Subject:** Skyscrapers, vehicles and neon signs were successfully represented.
+* **Color:** The blue, purple and pink neon palette was closely reproduced.
+* **Lighting:** Neon illumination and road reflections were clearly visible.
+* **Composition:** The wide-angle futuristic city view was maintained.
+* **Difference:** The number and design of buildings or vehicles may vary between generations.
+
+**Overall:** Adding details about lighting, colors, reflections and camera perspective significantly improved the similarity of the generated image.
+
+---
+
+# PROMPT REFINEMENT PROCESS
+
+```text
+Original Image
+      ↓
+Visual Analysis
+      ↓
+Basic Prompt
+      ↓
+Add Colors & Objects
+      ↓
+Add Lighting & Texture
+      ↓
+Add Style & Composition
+      ↓
+Generate Image
+      ↓
+Compare with Original
+      ↓
+Refine Prompt
+      ↓
+Final Image
+```
+
+---
+
+## OBSERVATIONS
+
+1. A simple prompt generally produces a broad interpretation of the image.
+2. Adding specific objects improves the accuracy of the generated image.
+3. Describing colors and lighting helps reproduce the visual appearance.
+4. Style-related keywords improve the artistic characteristics.
+5. Camera angle and composition are useful for obtaining a closer layout.
+6. Repeated prompt refinement improves the final result.
+
+---
+
+## DELIVERABLES
+
+1. Original reference image.
+2. Generated image.
+3. Basic prompt.
+4. Refined prompt.
+5. Final prompt.
+6. Comparison of original and generated images.
+7. Observations and modifications made during prompt refinement.
+
+---
+
+## CONCLUSION
+
+The experiment demonstrated the use of text-to-image generation tools for reproducing existing images through prompt engineering. By analyzing the subject, colors, lighting, textures, composition and style, increasingly detailed prompts were created. The experiment showed that **specific and well-structured prompts produce images that are more visually similar to the target image**.
+
+## RESULT
+
+The reproduction of the selected images using refined prompts was successfully demonstrated. The generated outputs were compared with the original images, and prompt refinement was used to improve their visual similarity.
